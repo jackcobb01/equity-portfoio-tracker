@@ -1,0 +1,12 @@
+:root{
+    /*Colours*/
+    --lightTheme: #d7e5e8;
+    --mediumTheme: #3281af;
+    --strongTheme: #0a1027;
+    --white: #ffffff;
+    --black: #000000;
+
+    /*Font Styling*/
+    --defaultFontFamily: "Tahoma", "Verdana", "Courier";
+    --defaultFontSize: 20;
+}

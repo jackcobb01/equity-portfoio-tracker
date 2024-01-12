@@ -1,0 +1,13 @@
+@import "../../styles/theme.css";
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+
+    color: var(--strongTheme);
+    font-family: var(--defaultFontFamily);
+    font-size: var(--defaultFontSize);
+}

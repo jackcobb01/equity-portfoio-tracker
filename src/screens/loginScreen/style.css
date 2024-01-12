@@ -1,0 +1,30 @@
+@import "../../styles/theme.css";
+
+.loginScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 90vh;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loginScreenPanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+    background: var(--lightTheme);
+
+    border:4px solid var(--strongTheme);
+    border-radius:10px 10px 10px 10px;
+}

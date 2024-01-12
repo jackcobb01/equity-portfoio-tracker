@@ -1,0 +1,15 @@
+@import "../../styles/theme.css";
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+
+    padding: 10px;
+
+    background: var(--strongTheme);
+    color: var(--lightTheme);
+    font-family: var(--defaultFontFamily);
+    font-size: var(--defaultFontSize);
+}

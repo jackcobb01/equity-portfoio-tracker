@@ -1,0 +1,21 @@
+@import "../../styles/theme.css";
+
+.routerButton {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    background: var(--strongTheme);
+    color: var(--lightTheme);
+    font-family: var(--defaultFontFamily);
+    font-size: var(--defaultFontSize);
+    text-decoration: none;
+
+    border:2px solid var(--strongTheme);
+    border-radius:5px 5px 5px 5px;
+}
