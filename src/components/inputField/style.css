@@ -1,5 +1,22 @@
 @import "../../styles/theme.css";
 
 .inputField {
+    display: flex;
+    align-items: center;
+
     margin: 10px;
+}
+
+.adjustedInputField {
+    display: flex;
+    align-items: center;
+
+    margin: 10px;
+    padding-left: 40px;
+}
+
+.passwordImage {
+    width: 30px;
+
+    margin-left: 10px;
 }

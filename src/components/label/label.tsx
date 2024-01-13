@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 
-function RouterButton({ text }) {
+function RouterButton({ text, isError = false }) {
 
     return (
-        <div className="label">
+        <div className={ isError ? "errorLabel" : "label" }>
             { text }
         </div>
     );
