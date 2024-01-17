@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Cookies from 'universal-cookie';
 import RouterButton from "../../components/routerButton/routerButton.tsx";
 import Label from "../../components/label/label.tsx";
 import InputField from "../../components/inputField/inputField.tsx";
@@ -6,6 +7,9 @@ import mockedLoginInformation from "../../mockedData/loginInformation.json";
 import "./style.css";
 
 function LoginScreen({ setLoggedInCallback }) {
+    // constants
+    const cookies = new Cookies(null, { path: '/' });
+
     // state variables
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -15,9 +19,6 @@ function LoginScreen({ setLoggedInCallback }) {
     const isAuthenticated = () => {
         return username === mockedLoginInformation.mockUsername && password === mockedLoginInformation.mockPassword;
     };
-
-    // have it whenever this page gets initially rendered we set the on login to false to hide the sidebar
-    setLoggedInCallback(false);
 
     return (
         <div className="loginScreen">
@@ -32,7 +33,10 @@ function LoginScreen({ setLoggedInCallback }) {
                         label="Login"
                         destination="dashboard"
                         additionalStyling={ { margin: 10 } }
-                        onClick={ () => { setLoggedInCallback(true) } }
+                        onClick={ () => {
+                            cookies.set('portfolio-tracker-logged-in', true);
+                            setLoggedInCallback(true);
+                        } }
                     />
                     :
                     <RouterButton

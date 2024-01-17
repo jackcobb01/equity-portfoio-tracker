@@ -11,7 +11,7 @@ function SideBar() {
         <div className="sideBar" >
             <RouterButton
                 label="Dashboard"
-                destination="dashboard"
+                destination="/"
                 graphic={dashboardImage}
             />
             <div className="sideBarDivider" />
