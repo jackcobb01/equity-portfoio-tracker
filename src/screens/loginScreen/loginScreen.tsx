@@ -31,7 +31,7 @@ function LoginScreen({ setLoggedInCallback }) {
                     isAuthenticated() ?
                     <RouterButton
                         label="Login"
-                        destination="dashboard"
+                        destination="/"
                         additionalStyling={ { margin: 10 } }
                         onClick={ () => {
                             cookies.set('portfolio-tracker-logged-in', true);

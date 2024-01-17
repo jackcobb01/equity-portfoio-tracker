@@ -6,11 +6,11 @@ import TransactionHistory from "./screens/transactionHistory/transactionHistory.
 import Settings from "./screens/settings/settings.tsx";
 
 // this function returns the router component
-function Router() {
+function Router({ setLoggedOutCallback }) {
     return (
         <Routes> {/*This component decides which component to show based on url*/}
             <Route path="/" element={<Dashboard />} />
-            <Route path="account" element={<Account />} />
+            <Route path="account" element={<Account setLoggedOutCallback={ setLoggedOutCallback } />} />
             <Route path="history" element={<TransactionHistory />} />
             <Route path="settings" element={<Settings />} />
         </Routes>

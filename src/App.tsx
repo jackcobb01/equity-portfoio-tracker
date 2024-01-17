@@ -11,21 +11,16 @@ function App() {
     const cookies = new Cookies(null, { path: '/' });
 
     // app state variables
-    const [loggedIn, setLoggedIn] = useState(false);
-
-    // the following function checks for a login cookie to exist
-    const getLoginCookie = () => {
-        return cookies.get('portfolio-tracker-logged-in');
-    };
+    const [loggedIn, setLoggedIn] = useState(cookies.get('portfolio-tracker-logged-in'));
 
     return (
         <div className="appBackground">
-                {!getLoginCookie() && !loggedIn ?
+                {!loggedIn ?
                     <LoginScreen setLoggedInCallback={setLoggedIn} />
                     :
                     <div className="appMainContent">
                         <SideBar />
-                        <Router />
+                        <Router setLoggedOutCallback={setLoggedIn} />
                     </div>
                 }
             <Footer />

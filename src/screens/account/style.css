@@ -1,0 +1,39 @@
+@import "../../styles/theme.css";
+
+.accountScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.accountScreenPanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+    background: var(--lightTheme);
+
+    border:4px solid var(--strongTheme);
+    border-radius:10px 10px 10px 10px;
+}
+
+.accountTitleDivider {
+    display: flex;
+    
+    width: 100%;
+    height: 1px;
+
+    margin-bottom: 20px;
+
+    background: var(--strongTheme);
+}

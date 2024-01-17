@@ -18,7 +18,7 @@ const getDaySuffix = (dayNumber) => {
     }
 };
 
-// the following is a function that formats the time state object
+// the following is a function that formats the time state object into a clock
 export const formatTime = (unformattedTime) => {
     var timeType = "AM";
     var unformattedHours = unformattedTime.getHours();
@@ -36,4 +36,11 @@ export const formatTime = (unformattedTime) => {
         ${MONTHS[unformattedTime.getMonth()]}
         ${unformattedTime.getDate()}${getDaySuffix(unformattedTime.getDate())},
         ${unformattedHours}:${unformattedTime.getMinutes()}:${unformattedSeconds} ${timeType}`;
-}
+};
+
+// the following is a function that formats the time state object into a date
+export const formatDate = (unformattedDate) => {
+    return `${MONTHS[unformattedDate.getMonth()]}
+            ${unformattedDate.getDate()}${getDaySuffix(unformattedDate.getDate())},
+            ${unformattedDate.getYear() + 1900}`;
+};
