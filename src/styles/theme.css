@@ -1,8 +1,8 @@
 :root{
     /*Colours*/
     --lightTheme: #d7e5e8;
-    --mediumTheme: #3281af;
-    --strongTheme: #0a1027;
+    --mediumTheme: #8088b8;
+    --strongTheme: #0e1533;
     --errorTheme: #da3232;
     --white: #ffffff;
     --black: #000000;
@@ -11,5 +11,5 @@
     --defaultFontFamily: "Tahoma", "Verdana", "Courier";
     --largeFontSize: 30px;
     --defaultFontSize: 20px;
-    --smallFontSize: 10px;
+    --smallFontSize: 15px;
 }

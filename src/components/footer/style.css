@@ -8,8 +8,8 @@
 
     padding: 10px;
 
-    background: var(--strongTheme);
+    background: var(--black);
     color: var(--lightTheme);
     font-family: var(--defaultFontFamily);
-    font-size: var(--defaultFontSize);
+    font-size: var(--smallFontSize);
 }

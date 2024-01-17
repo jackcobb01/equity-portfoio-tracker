@@ -5,7 +5,7 @@ import InputField from "../../components/inputField/inputField.tsx";
 import mockedLoginInformation from "../../mockedData/loginInformation.json";
 import "./style.css";
 
-function LoginScreen() {
+function LoginScreen({ setLoggedInCallback }) {
     // state variables
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -15,6 +15,9 @@ function LoginScreen() {
     const isAuthenticated = () => {
         return username === mockedLoginInformation.mockUsername && password === mockedLoginInformation.mockPassword;
     };
+
+    // have it whenever this page gets initially rendered we set the on login to false to hide the sidebar
+    setLoggedInCallback(false);
 
     return (
         <div className="loginScreen">
@@ -29,6 +32,7 @@ function LoginScreen() {
                         label="Login"
                         destination="dashboard"
                         additionalStyling={ { margin: 10 } }
+                        onClick={ () => { setLoggedInCallback(true) } }
                     />
                     :
                     <RouterButton

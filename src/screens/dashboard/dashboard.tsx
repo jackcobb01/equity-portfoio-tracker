@@ -24,7 +24,6 @@ function Dashboard() {
                 <Label text={ "$" + portfolioInformation.mockedPortfolioValue } styling="largeLabelNoMargin" />
                 <Label text={ formatTime(currentTime) } styling="labelNoMargin" />
             </div>
-            Dashboard
         </div>
     );
 }

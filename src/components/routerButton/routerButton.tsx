@@ -2,11 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-function RouterButton({ label, destination, additionalStyling = {}, onClick = () => {} }) {
+function RouterButton({ label, destination, additionalStyling = {}, onClick = () => {}, graphic = "" }) {
     return (
-        <Link className="routerButton" to={destination} style={additionalStyling} onClick={onClick}>
-            {label}
-        </Link>
+        <div>
+            <Link className="routerButton" to={destination} style={additionalStyling} onClick={onClick}>
+                {label}
+                {graphic !== "" &&
+                    <img
+                        className="routerButtonImage"
+                        src={graphic}
+                        alt="routerImage"
+                    />
+                }
+            </Link>
+        </div>
     );
 }
 

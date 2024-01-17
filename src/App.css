@@ -3,5 +3,11 @@
     justify-content: space-between;
     flex-direction: column;
 
-    min-height: 100vh;
+    height: 100vh;
+}
+
+.appMainContent {
+    display: flex;
+
+    height: 100%;
 }
