@@ -9,5 +9,7 @@
 
     /*Font Styling*/
     --defaultFontFamily: "Tahoma", "Verdana", "Courier";
-    --defaultFontSize: 20;
+    --largeFontSize: 30px;
+    --defaultFontSize: 20px;
+    --smallFontSize: 10px;
 }

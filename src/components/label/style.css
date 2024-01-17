@@ -12,6 +12,60 @@
     font-size: var(--defaultFontSize);
 }
 
+.labelNoMargin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--strongTheme);
+    font-family: var(--defaultFontFamily);
+    font-size: var(--defaultFontSize);
+}
+
+.smallLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+
+    color: var(--strongTheme);
+    font-family: var(--defaultFontFamily);
+    font-size: var(--smallFontSize);
+}
+
+.smallLabelNoMargin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--strongTheme);
+    font-family: var(--defaultFontFamily);
+    font-size: var(--smallFontSize);
+}
+
+.largeLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+
+    color: var(--strongTheme);
+    font-family: var(--defaultFontFamily);
+    font-size: var(--largeFontSize);
+}
+
+.largeLabelNoMargin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--strongTheme);
+    font-family: var(--defaultFontFamily);
+    font-size: var(--largeFontSize);
+}
+
 .errorLabel {
     display: flex;
     align-items: center;

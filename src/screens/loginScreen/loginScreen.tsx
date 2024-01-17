@@ -6,10 +6,12 @@ import mockedLoginInformation from "../../mockedData/loginInformation.json";
 import "./style.css";
 
 function LoginScreen() {
+    // state variables
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [incorrectLogin, setIncorrectLogin] = useState(false);
 
+    // checks that the user entered in the correct information to login
     const isAuthenticated = () => {
         return username === mockedLoginInformation.mockUsername && password === mockedLoginInformation.mockPassword;
     };
@@ -37,7 +39,7 @@ function LoginScreen() {
                     />
                 }
             </div>
-            { incorrectLogin && <Label text="Incorrect login information" isError={true} />}
+            { incorrectLogin && <Label text="Incorrect login information" styling="errorLabel" />}
         </div>
     );
 }

@@ -1,0 +1,22 @@
+@import "../../styles/theme.css";
+
+.dashboardScreen {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 90vh;
+}
+
+.dashboardHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 10px;
+
+    background: var(--lightTheme);
+}
