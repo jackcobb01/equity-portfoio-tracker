@@ -1,7 +1,7 @@
 import React from "react";
 import Cookies from 'universal-cookie';
 import Label from "../../components/label/label.tsx";
-import mockedAccountInformation from "../../mockedData/accountInformation.json";
+import accountInformation from "../../data/accountInformation.json";
 import { formatDate } from "../../utils/dateUtils.tsx";
 import RouterButton from "../../components/routerButton/routerButton.tsx";
 import "./style.css";
@@ -10,9 +10,9 @@ function Account({ setLoggedOutCallback }) {
     // constants
     const cookies = new Cookies(null, { path: '/' });
     const mockDateOfCreation = new Date(
-        mockedAccountInformation.mockYearOfCreation,
-        mockedAccountInformation.mockMonthOfCreation,
-        mockedAccountInformation.mockDayOfCreation,
+        accountInformation.mockYearOfCreation,
+        accountInformation.mockMonthOfCreation,
+        accountInformation.mockDayOfCreation,
         0, 0, 0, 0
     );
 
@@ -21,8 +21,8 @@ function Account({ setLoggedOutCallback }) {
             <div className="accountScreenPanel">
                 <Label text="Account Information" styling="largeLabel" />
                 <div className="accountTitleDivider"/>
-                <Label text={`Account Name: ${mockedAccountInformation.mockAccountFirstName}
-                    ${mockedAccountInformation.mockAccountLastName}`} />
+                <Label text={`Account Name: ${accountInformation.mockAccountFirstName}
+                    ${accountInformation.mockAccountLastName}`} />
                 <Label text={`Date of Creation: ${formatDate(mockDateOfCreation)}`}/>
                 <RouterButton
                     label="Logout"

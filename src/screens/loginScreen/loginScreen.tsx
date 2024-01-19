@@ -3,7 +3,7 @@ import Cookies from 'universal-cookie';
 import RouterButton from "../../components/routerButton/routerButton.tsx";
 import Label from "../../components/label/label.tsx";
 import InputField from "../../components/inputField/inputField.tsx";
-import mockedLoginInformation from "../../mockedData/loginInformation.json";
+import loginInformation from "../../data/loginInformation.json";
 import "./style.css";
 
 function LoginScreen({ setLoggedInCallback }) {
@@ -17,7 +17,7 @@ function LoginScreen({ setLoggedInCallback }) {
 
     // checks that the user entered in the correct information to login
     const isAuthenticated = () => {
-        return username === mockedLoginInformation.mockUsername && password === mockedLoginInformation.mockPassword;
+        return username === loginInformation.mockUsername && password === loginInformation.mockPassword;
     };
 
     return (

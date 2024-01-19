@@ -1,0 +1,49 @@
+@import "../../styles/theme.css";
+
+.historyScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.historyScreenPanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    background: var(--lightTheme);
+
+    border:4px solid var(--strongTheme);
+    border-radius:10px 10px 10px 10px;
+}
+
+.historyTitleDivider {
+    display: flex;
+    
+    width: 100%;
+    height: 1px;
+
+    margin-bottom: 20px;
+
+    background: var(--strongTheme);
+}
+
+.historyTable {
+    display: flex;
+}
+
+.historyTableColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "transactionType": "cash", "amount": 50000, "dateOfTransaction": "2024-01-13T09:11:28+00:00"
+    },
+    {
+        "transactionType": "equity", "symbol": "DELL", "amount": 8764.28, "quantity": 113, "price": 77.56, "dateOfTransaction": "2024-01-15T14:44:37+00:00"
+    },
+    {
+        "transactionType": "cash", "amount": -8764.28, "dateOfTransaction": "2024-01-15T14:44:37+00:00"
+    },
+    {
+        "transactionType": "equity", "symbol": "AMZN", "amount": 20177.43, "quantity": 133, "price": 151.71, "dateOfTransaction": "2024-01-16T12:56:07+00:00"
+    },
+    {
+        "transactionType": "cash", "amount": -20177.43, "dateOfTransaction": "2024-01-16T12:56:07+00:00"
+    },
+    {
+        "transactionType": "equity", "symbol": "AAPL", "amount": 18268, "quantity": 100, "price": 182.68, "dateOfTransaction": "2024-01-17T22:21:35+00:00"
+    },
+    {
+        "transactionType": "cash", "amount": -18268, "dateOfTransaction": "2024-01-17T22:21:35+00:00"
+    }
+]

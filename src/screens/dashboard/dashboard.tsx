@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Label from "../../components/label/label.tsx";
-import portfolioInformation from "../../mockedData/portfolioInformation.json";
-import { formatTime } from "../../utils/dateUtils.tsx";
+import { formatTimeAndDate } from "../../utils/dateUtils.tsx";
 import "./style.css";
 
 function Dashboard() {
@@ -21,8 +20,8 @@ function Dashboard() {
     return (
         <div className="dashboardScreen">
             <div className="dashboardHeader">
-                <Label text={ "$" + portfolioInformation.mockedPortfolioValue } styling="largeLabelNoMargin" />
-                <Label text={ formatTime(currentTime) } styling="labelNoMargin" />
+                <Label text={ "$50,000" } styling="largeLabelNoMargin" />
+                <Label text={ formatTimeAndDate(currentTime) } styling="labelNoMargin" />
             </div>
         </div>
     );
